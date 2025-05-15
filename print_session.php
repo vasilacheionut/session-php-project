@@ -1,6 +1,13 @@
 <pre>
 <?php
-print_r($_SESSION['users']);
-print_r($_SESSION['auth']);
+echo '$_SESSION<br>';
+print_r($_SESSION);
+echo '<br>';
+
+
+echo '$_SESSION<br>';
+print_r($$_COOKIE);
+echo '<br>';
+
 ?>
 </pre>

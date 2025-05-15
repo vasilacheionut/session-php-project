@@ -13,11 +13,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    $_SESSION['users'][] = [
-        'email' => $email,
-        'password' => $password,
-        'role' => 'user'
-    ];
+    if ($email === 'root@admin.com') {
+        $_SESSION['users'][] = [
+            'email' => $email,
+            'password' => $password,
+            'role' => 'admin'
+        ];    
+    } else {
+        $_SESSION['users'][] = [
+            'email' => $email,
+            'password' => $password,
+            'role' => 'user'
+        ];    
+    }
+
 
     echo "Cont creat cu succes. <a href='login.php'>Login</a>";
     exit;
