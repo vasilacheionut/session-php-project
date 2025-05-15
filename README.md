@@ -8,10 +8,9 @@ register.php – formular de înregistrare
 login.php – formular de login
 logout.php – delogare
 dashboard.php – pagină vizibilă doar dacă ești autentificat
-users.php – fișier pentru stocarea utilizatorilor în sesiune
+users.php – fișier pentru stocarea utilizatorilor în sesiune $_SESSION
 index.php – redirecționare
 
-users.php (salvează utilizatorii în $_SESSION)
 ```
 
 Structura fișiere:
