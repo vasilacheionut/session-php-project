@@ -21,9 +21,11 @@ session-project/
 ├── login.php
 ├── logout.php
 ├── dashboard.php
+├── change_password.php
+├── activity_log.php
 ├── users.php
-└── auth.php
-
+├── auth.php
+└── logs.php
 ```
 
 

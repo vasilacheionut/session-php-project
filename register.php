@@ -8,17 +8,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     foreach ($_SESSION['users'] as $user) {
         if ($user['email'] === $email) {
-            echo "Email deja folosit. <a href='register.php'>Încearcă altul</a>";
+            echo "Email deja folosit.";
             exit;
         }
     }
 
     $_SESSION['users'][] = [
         'email' => $email,
-        'password' => $password // în realitate folosește hash!
+        'password' => $password,
+        'role' => 'user'
     ];
 
-    echo "Înregistrare reușită. <a href='login.php'>Mergi la login</a>";
+    echo "Cont creat cu succes. <a href='login.php'>Login</a>";
     exit;
 }
 ?>
@@ -29,4 +30,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="password" name="password" required placeholder="Parolă"><br>
     <button type="submit">Înregistrare</button>
 </form>
-<a href="login.php">Ai deja cont?</a>
