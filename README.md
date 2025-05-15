@@ -11,6 +11,7 @@ dashboard.php – pagină vizibilă doar dacă ești autentificat
 users.php – fișier pentru stocarea utilizatorilor în sesiune
 index.php – redirecționare
 
+users.php (salvează utilizatorii în $_SESSION)
 ```
 
 Structura fișiere:
@@ -26,7 +27,6 @@ session-project/
 
 ```
 
-users.php (salvează utilizatorii în $_SESSION)
 
 📝 Observații:
 ```
