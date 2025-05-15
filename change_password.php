@@ -38,3 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="password" name="new" required placeholder="Noua parolă"><br>
     <button type="submit">Salvează</button>
 </form>
+
+<?php
+require_once "print_session.php";
+?>

@@ -22,5 +22,10 @@ foreach ($_SESSION['users'] as $user) {
 <ul>
     <li><a href="change_password.php">Schimbă parola</a></li>
     <li><a href="activity_log.php">Vezi activitatea</a></li>
+    <li><a href="logs.php">Vezi loguri</a></li>
     <li><a href="logout.php">Logout</a></li>
 </ul>
+
+<?php
+require_once "print_session.php";
+?>

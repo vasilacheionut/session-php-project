@@ -23,3 +23,5 @@ if (isset($_SESSION['auth'])) {
         'time' => date('Y-m-d H:i:s')
     ];
 }
+
+require_once "print_session.php";
