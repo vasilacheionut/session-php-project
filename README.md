@@ -16,7 +16,7 @@ users.php – fișier pentru stocarea utilizatorilor în sesiune
 index.php – redirecționare
 
 Structura fișiere:
-'''
+```
 session-project/
 ├── index.php
 ├── register.php
@@ -25,7 +25,7 @@ session-project/
 ├── dashboard.php
 ├── users.php
 └── auth.php
-'''
+```
 
 users.php (salvează utilizatorii în $_SESSION)
 
