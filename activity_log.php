@@ -1,5 +1,5 @@
-<?php
-include 'auth.php';
+<?php 
+include 'header.php';
 
 if (!isset($_SESSION['auth'])) {
     header('Location: login.php');
@@ -15,4 +15,6 @@ foreach ($_SESSION['logs'] as $log) {
 }
 echo "<br><a href='dashboard.php'>Înapoi</a>";
 
-require_once "print_session.php";
+return require_once "print_session.php";
+
+include 'footer.php'; 

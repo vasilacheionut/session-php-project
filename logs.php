@@ -1,5 +1,5 @@
-<?php
-include 'auth.php';
+<?php 
+include 'header.php';
 
 if (!isset($_SESSION['auth'])) {
     header('Location: login.php');
@@ -90,3 +90,5 @@ if (isset($_POST['clear_logs']) && $isAdmin) {
 
 <br>
 <a href="dashboard.php">Înapoi la dashboard</a>
+
+<?php include 'footer.php'; ?>
