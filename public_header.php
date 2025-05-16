@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #eef;
+            background: #f5f5f5;
             margin: 20px;
             height: 100vh;
             overflow: hidden;
