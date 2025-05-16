@@ -19,12 +19,7 @@ foreach ($_SESSION['users'] as $user) {
 <h2>Bun venit, <?= htmlspecialchars($_SESSION['auth']) ?></h2>
 <p>Rol: <?= $loggedUser['role'] ?></p>
 <p>Ultima activitate: <?= $_SESSION['last_active'][$_SESSION['auth']] ?? 'N/A' ?></p>
-<ul>
-    <li><a href="change_password.php">Schimbă parola</a></li>
-    <li><a href="activity_log.php">Vezi activitatea</a></li>
-    <li><a href="logs.php">Vezi loguri</a></li>
-    <li><a href="logout.php">Logout</a></li>
-</ul>
+
 
 <?php
 return require_once "print_session.php";

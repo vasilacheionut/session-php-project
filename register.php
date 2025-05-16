@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <button type="submit">Înregistrează-te</button>
 </form>
 
-<p>Ai deja cont? <a href="login.php">Autentificare</a></p>
+<p class="account">Ai deja cont? <a href="login.php">Autentificare</a></p>
 
 </div>
 

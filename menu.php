@@ -37,6 +37,7 @@ $role = $currentUser['role'];
     <?php if (isset($_SESSION['auth'])): ?>
         <li><a href="dashboard.php">🏠 Dashboard</a></li>
         <li><a href="logs.php">📜 Loguri</a></li>
+        <li><a href="activity_log.php">📊 Vezi activitatea</a></li>
         <li><a href="change_password.php">🔁 Schimbare parolă</a></li>
         <li><a href="profile.php">👤 Profil</a></li>
         <?php
